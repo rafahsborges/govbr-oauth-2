@@ -1,10 +1,10 @@
 import {authorizeURL, getCompanys, getCredentialType, getToken} from "./oauth";
 
-const govbrOauth = {
+const govbrOauth2 = {
   authorize: authorizeURL,
   getToken: getToken,
   getCredentialType: getCredentialType,
   getCompanys: getCompanys
 };
 
-export default govbrOauth;
+export default govbrOauth2;

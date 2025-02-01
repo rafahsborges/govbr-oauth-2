@@ -1,1 +1,1 @@
-export { default as govbrOauth } from "./lib/index";
+export { default as govbrOauth2 } from "./lib/index";

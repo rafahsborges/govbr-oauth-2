@@ -1,6 +1,6 @@
 {
-  "name": "govbr-oauth",
-  "version": "1.3.0",
+  "name": "govbr-oauth-2",
+  "version": "2.0.0",
   "description": "Serviço de autenticação no gov.br",
   "main": "dist/index.js",
   "types": "lib/index.d.ts",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/dtedesco/govbr-oauth.git"
+    "url": "git+ssh://git@github.com/rafahsborges/govbr-oauth-2.git"
   },
   "keywords": [
     "GovBr",
@@ -24,9 +24,9 @@
   "author": "Rafael Borges <rafaelsouzaborges@outlook.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dtedesco/govbr-oauth/issues"
+    "url": "https://github.com/rafahsborges/govbr-oauth-2/issues"
   },
-  "homepage": "https://github.com/dtefdesco/govbr-oauth#readme",
+  "homepage": "https://github.com/rafahsborges/govbr-oauth-2#readme",
   "devDependencies": {
     "@babel/preset-typescript": "^7.8.3",
     "@types/bluebird": "^3.5.27",

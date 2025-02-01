@@ -1,5 +1,5 @@
 const express = require("express");
-const { govbrOauth } = require("govbr-oauth");
+const { govbrOauth2 } = require("govbr-oauth-2");
 
 const app = express();
 const port = 3000;
@@ -16,16 +16,16 @@ const config = {
 
 app.get("/login", (req, res) => {
   // Gera a url de autenticação
-  const url = govbrOauth.authorize(config) || "";
+  const url = govbrOauth2.authorize(config) || "";
   res.redirect(url);
 });
 
 app.get("/callback", async (req, res) => {
   const code = req.query.code;
   // Obtem o token
-  const token = await govbrOauth.getToken(config, code);
+  const token = await govbrOauth2.getToken(config, code);
   // Obtem o tipo de selo
-  govbrOauth
+  govbrOauth2
     .getCredentialType(config, token.access_token)
     .then(access_level => {
       token.access_level = access_level;
